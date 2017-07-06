@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -14,7 +15,6 @@
 				<strong>New York Times Search</strong>
 			</h1>
 		</div>
-		<div class="row">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">
@@ -43,13 +43,12 @@
 					    <label for="endYear">End Year (Optional):</label>
 					    <input type="text" class="form-control" id="endYear">
 					  </div>
-					  <button type="submit" class="btn btn-default" id="runSearch"><i class="fa fa-search"></i> Search</button>
-  					  <button type="button" class="btn btn-default" id="clearAll"><i class="fa fa-trash"></i> Clear Results</button>
+					  <button type="submit" class="btn btn-success" id="runSearch"><i class="fa fa-search"></i> Search</button>
+  					  <button type="button" class="btn btn-primary" id="clearAll"><i class="fa fa-trash"></i> Clear Results</button>
 					</form>
 				</div>
 			</div>
-		</div>
-		<div class="panel panel-primary">
+			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">
 					<strong>Top Articles</strong>
@@ -57,7 +56,7 @@
 				</div>
 				<div class="panel-body" id="resultsSection">
 				</div>
-		</div>
+			</div>
 	</div>
 <script src="app.js"></script>
 </body>
