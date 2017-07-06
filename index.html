@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>New York Times Search</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">
+				<span class="glyphicon glyphicon-search"></span>
+				<strong>New York Times Search</strong>
+			</h1>
+		</div>
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<strong>Search Parameters</strong>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<form role="form">
+					  <div class="form-group">
+					    <label for="search">Keyword:</label>
+					    <input type="text" class="form-control" id="keyword">
+					  </div>
+					  <div class="form-group">
+					    <label for="pwd">How Many Records?</label>
+						<select class="form-control" id="numRecords">
+							<option value="1">1</option>
+							<option value="5" selected="">5</option>
+							<option value="10">10</option>
+						</select>			  
+					  </div>
+					  <div class="form-group">
+					    <label for="startYear">Start Year (Optional):</label>
+					    <input type="text" class="form-control" id="startYear">
+					  </div>
+					  <div class="form-group">
+					    <label for="endYear">End Year (Optional):</label>
+					    <input type="text" class="form-control" id="endYear">
+					  </div>
+					  <button type="submit" class="btn btn-default" id="runSearch"><i class="fa fa-search"></i> Search</button>
+  					  <button type="button" class="btn btn-default" id="clearAll"><i class="fa fa-trash"></i> Clear Results</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+					<strong>Top Articles</strong>
+					</h3>
+				</div>
+				<div class="panel-body" id="resultsSection">
+				</div>
+		</div>
+	</div>
+</body>
+</html>
